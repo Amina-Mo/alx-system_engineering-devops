@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "There are $(echo $PATH | tr -dc ':' | wc -c) directories in the PATH."
+echo "$(echo $PATH | tr -dc ':' | wc -c)"
