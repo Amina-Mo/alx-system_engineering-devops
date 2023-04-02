@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$(echo $PATH | tr -dc ':' '\n' | wc -c)"
+echo "$(echo $PATH: | tr ':' '\n' | tree -d | tail -1 | grep -o '[0-9]*')"
